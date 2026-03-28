@@ -105,14 +105,15 @@ Invoke the OpenLane tool by navigating to >>Desktop>>OpenLane
 ```
 prep -design picorv32a
 ```
-This command is used to as the design setup such as to set the environment variables,informing the tool about the pdk,standard cell libraries,and also creating the runs directory.
+This command is used as the design setup to set the environment variables,informing the tool about the pdk,standard cell libraries,and also creating the runs directory.
 
 ![image](images/prep_design.png)
 
+After we prep the design we are ready to synthesize the design and we use the command run_synthesis.
 ```
 run_synthesis
 ```
-After we prep the design we are ready to synthesize the design and we use the command run_synthesis.
+
 ![image](images/run_synthesis.png)
 
 Computing the flop ratio after synthesis:
