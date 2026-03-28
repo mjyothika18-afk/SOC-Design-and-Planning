@@ -1,6 +1,8 @@
 # SOC-Design-and-Planning
 
-<p>Welcome! In this repository, I have documented my learnings through this 10-day workshop organised by VSD (VLSI System Design) in collaboration with NASSCOM. This workshop entails the complete RTL-to-GDSII flow of picorv32a.This workshop has been executed on cloud platform.
+<p>Welcome :)
+  
+  In this repository, I have documented my learnings through this 10-day workshop organised by VSD (VLSI System Design) in collaboration with NASSCOM. This workshop entails the complete RTL-to-GDSII flow of picorv32a.This workshop has been executed on cloud platform.
 
 
 <b> Day 1: Inception of open-source EDA, OpenLANE and Sky130 PDK </b>
