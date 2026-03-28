@@ -1,6 +1,6 @@
 # SOC-Design-and-Planning
 
-<p>Welcome! In this repository, I have documented my learnings through this 10-day workshop organised by VSD (VLSI System Design) in collaboration with NASSCOM. This workshop entails the complete RTL-to-GDSII flow of picorv32a.
+<p>Welcome! In this repository, I have documented my learnings through this 10-day workshop organised by VSD (VLSI System Design) in collaboration with NASSCOM. This workshop entails the complete RTL-to-GDSII flow of picorv32a.This workshop has been executed on cloud platform.
 
 
 <b> Day 1: Inception of open-source EDA, OpenLANE and Sky130 PDK </b>
@@ -91,6 +91,7 @@ OpenLane is not a single tool — it’s a flow integrating multiple tools:
 ___
 
 <b> Lab Activities </b>
+
 Invoke the OpenLane tool by navigating to >>Desktop>>OpenLane
 
 ```
@@ -99,9 +100,29 @@ Invoke the OpenLane tool by navigating to >>Desktop>>OpenLane
 >./flow.tcl -interactive
 >package require openlane 1.0.2
 ```
+<image>
+  
+```
+prep -design picorv32a
+```
+This command is used to as the design setup such as to set the environment variables,informing the tool about the pdk,standard cell libraries,and also creating the runs directory.
 
+<image>
 
+```
+run_synthesis
+```
+After we prep the design we are ready to synthesize the design and we use the command run_synthesis.
+<image>
+
+Computing the flop ratio after synthesis:
+```
+Flop ratio= (Number of D-ffs)/(Total cell count)
+          = 1613/15762
+          = 0.10233 (10.23% of the total cell count are d-flip flops)
+```
 </details>
+
 <b> Day 2: Floorplanning and Physical Preparation </b>
 
 
