@@ -107,7 +107,6 @@ prep -design picorv32a
 ```
 This command is used to as the design setup such as to set the environment variables,informing the tool about the pdk,standard cell libraries,and also creating the runs directory.
 
-![image](images/Lab1_invoke2.png)
 ![image](images/prep_design.png)
 
 ```
