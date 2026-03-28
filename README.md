@@ -19,7 +19,7 @@
 ---
 <b>Understanding RTL-to-GDSII flow:</b>
 
-![images](images/RTL_to_GDSII_!.png)
+![images](images/RTL-to-GDSII_1.png)
 
 <b>1. RTL Design (Front-End) </b>
    * Written in Verilog / VHDL
