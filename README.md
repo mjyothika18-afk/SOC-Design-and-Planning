@@ -176,7 +176,8 @@ Flop ratio= (Number of D-ffs)/(Total cell count)
 ---
 <b>Lab activities:</b>
 
-Let's start our PD flow with floorplan.Since I am starting floorplan separately, I will need to start with the previous steps again i.e from make mount until run_synthesis(also since prep -design <design_name> usually creates a run directory each time I run the command we can include a switch called -tag <enter the name of previous run file> -overwrite.(just to avoid creation of multiple run directories)
+Let's start our PD flow with floorplan.
+Info:Since I am starting floorplan separately, I will need to start with the previous steps again i.e from make mount until run_synthesis(also since prep -design <design_name> usually creates a run directory each time I run the command we can include a switch called -tag <enter the name of previous run file > -overwrite.(just to avoid creation of multiple run directories)
 
 ```
 run_floorplan
