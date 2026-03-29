@@ -143,6 +143,58 @@ Flop ratio= (Number of D-ffs)/(Total cell count)
 <details>
 <summary>Click to expand detailed notes</summary>
 
-(Add screenshots, commands, observations here)
+<b>Floorplanning</b> is the first step in Physical Design (PnR) where you define the chip’s physical layout structure before placing standard cells.
 
+1.Die & Core Area Definition
+  Die area → total chip size
+  Core area → region where standard cells are placed
+
+2.Macro Placement:This is done to minimize routing congestion and to Keep related macros close
+  Large blocks like: SRAMs,IPs
+
+3.IO Pad Placement: Input/Output pins placed on chip boundary
+
+4.Aspect Ratio Selection and Utilization: Ratio of height to width of the core
+  % of core area used by standard cells is utilization
+
+5.Keep Margins & Blockages
+  Keep-out regions → no placement near macros
+  Routing blockages → restrict routing areas
+
+  Physical only cells:
+1.Decap Cells Decoupling capacitors are another type of physical only cells used in PD flow. These do not have any logical functionality. These cells essentially act as a capacitance between power and ground rails, and hence as a charge reservoir that can be counted upon while there is a high demand for current from the power lines.
+
+2.Endcap Cells: Placed at the edges of standard cell rows or blocks to terminate diffusion/well regions, prevent DRC violations, and provide structural integrity.
+
+3.Tap Cells: Connect substrate and well regions to power rails, preventing floating wells, stabilizing body bias, and avoiding latch-up conditions.
+
+---
+Lab activities:
+
+Let's start our PD flow with floorplan.Since I am starting floorplan separately, I will need to start with the previous steps again i.e from make mount until run_synthesis(also since prep -design <design_name> usually creates a run directory each time I run the command we can include a switch called -tag <enter the name of previous run file> -overwrite.(just to avoid creation of multiple run directories)
+
+```
+run_floorplan
+```
+
+![image]()
+
+Now we can visialize the DEF file generated after floorplan in Magic
+
+```
+magic –T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech lef read ../../merged.nom.lef def read picorv32a.def &
+```
+
+![image]()
+We can user 'S' to select the design and type 'V' to bring the design to the centre.
+
+Once we centre the design move the cursor to the element of your interest and type 'S' to know the element's name use the tkcon window and type 'what'
+
+![image]()
+
+
+Now,we can use run_placement command to place the standard cells in our design.
+```
+run_placement
+```
 </details>
