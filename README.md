@@ -182,7 +182,7 @@ Let's start our PD flow with floorplan.Since I am starting floorplan separately,
 run_floorplan
 ```
 
-![image]()
+![image](images/floorplan.png)
 
 Now we can visialize the DEF file generated after floorplan in Magic
 
@@ -190,17 +190,23 @@ Now we can visialize the DEF file generated after floorplan in Magic
 magic –T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech lef read ../../merged.nom.lef def read picorv32a.def &
 ```
 
-![image]()
+![image](images/floorplan_magic.png)
 
 We can user 'S' to select the design and type 'V' to bring the design to the centre.
 
 Once we centre the design move the cursor to the element of your interest and type 'S' to know the element's name use the tkcon window and type 'what'
 
-![image]()
+![image](images/floorplan_2_in_magic.png)
+
+![image](images/viewing_select_in_magic.png)
+
+![image](images/viewing_what_in_magic_floorplan.png)
 
 
 Now,we can use run_placement command to place the standard cells in our design.
 ```
 run_placement
 ```
+
+![image](images/placement.png)
 </details>
