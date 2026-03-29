@@ -143,6 +143,8 @@ Flop ratio= (Number of D-ffs)/(Total cell count)
 <details>
 <summary>Click to expand detailed notes</summary>
 
+---
+
 <b>Floorplanning</b> is the first step in Physical Design (PnR) where you define the chip’s physical layout structure before placing standard cells.
 
 1.Die & Core Area Definition
@@ -161,15 +163,18 @@ Flop ratio= (Number of D-ffs)/(Total cell count)
   Keep-out regions → no placement near macros
   Routing blockages → restrict routing areas
 
-  Physical only cells:
-1.Decap Cells Decoupling capacitors are another type of physical only cells used in PD flow. These do not have any logical functionality. These cells essentially act as a capacitance between power and ground rails, and hence as a charge reservoir that can be counted upon while there is a high demand for current from the power lines.
+  <b>Physical only cells:</b>
+  
+1.<b>Decap Cells</b> Decoupling capacitors are another type of physical only cells used in PD flow. These do not have any logical functionality.   These cells essentially act as a capacitance between power and ground rails, and hence as a charge reservoir that can be counted upon     while there is a high demand for current from the power lines.
 
-2.Endcap Cells: Placed at the edges of standard cell rows or blocks to terminate diffusion/well regions, prevent DRC violations, and provide structural integrity.
 
-3.Tap Cells: Connect substrate and well regions to power rails, preventing floating wells, stabilizing body bias, and avoiding latch-up conditions.
+2.<b>Endcap Cells</b>: Placed at the edges of standard cell rows or blocks to terminate diffusion/well regions, prevent DRC violations, and        provide structural integrity.
+
+
+3.<b>Tap Cells</b>: Connect substrate and well regions to power rails, preventing floating wells, stabilizing body bias, and avoiding latch-up     conditions.
 
 ---
-Lab activities:
+<b>Lab activities:</b>
 
 Let's start our PD flow with floorplan.Since I am starting floorplan separately, I will need to start with the previous steps again i.e from make mount until run_synthesis(also since prep -design <design_name> usually creates a run directory each time I run the command we can include a switch called -tag <enter the name of previous run file> -overwrite.(just to avoid creation of multiple run directories)
 
@@ -186,6 +191,7 @@ magic –T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech lef read ../.
 ```
 
 ![image]()
+
 We can user 'S' to select the design and type 'V' to bring the design to the centre.
 
 Once we centre the design move the cursor to the element of your interest and type 'S' to know the element's name use the tkcon window and type 'what'
