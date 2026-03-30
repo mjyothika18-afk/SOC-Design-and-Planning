@@ -212,3 +212,103 @@ run_placement
 
 ![image](images/placement.png)
 </details>
+
+
+<b> Day 3: Design and Characterisation of Library Cells using Magic & ngspice </b>
+
+
+- CMOS Inverter — SPICE Deck,Spice extraction of inverter in magic.Editing the spice model file for analysis through simulation andPost-    layout ngspice simulations.
+
+- 16-Mask CMOS Fabrication Process
+  
+- Find problem in the DRC section of the old magic tech file for the skywater process and fix them.  
+
+<details>
+<summary>Click to expand detailed notes</summary>
+
+---
+
+CMOS Fabrication process: 
+
+A 16-mask CMOS fabrication process uses multiple lithography steps to sequentially form wells, isolation, gates, source/drain regions, contacts, and multi-layer metal interconnects, resulting in a complete integrated circuit.
+
+```
+
+Substrate
+   ↓
+Well Formation (N/P)
+   ↓
+Isolation (STI)
+   ↓
+Gate Formation
+   ↓
+Source/Drain
+   ↓
+Contacts
+   ↓
+Metal Layers
+   ↓
+Passivation
+   ↓
+Pad Openings
+   ↓
+Final Chip
+
+```
+
+Layout view VS Abstract view
+
+1. Layout View
+
+Layout = Actual physical implementation
+
+Contains:
+Exact geometry (polygons)
+Metal layers, vias
+Diffusion, poly
+Used for:
+DRC
+LVS
+Final GDSII
+
+2. Abstract View
+
+Abstract = Simplified representation of layout
+
+Contains:
+Block boundaries
+Pin locations
+Routing blockages
+Does NOT include:
+Full geometry details
+
+Used for:
+
+Placement
+Floorplanning
+Routing estimation
+
+<b>CMOS Inverter simulation parameters:</b>
+
+1.W/L Ratios (Transistor Sizing): Width (W) and Length (L) of PMOS and NMOS transistors, critical for balancing pull-up and pull-down times (setting rise/fall times).
+
+2.Propagation Delay (tp): The time delay between input and output changes, calculated by averaging high-to-low (tphl) and low-to-high (tplh) delays (measured at 50% points).
+
+3.Rise and Fall Times (tr,tf): Time taken for the output to transition between 10% and 90% of voltage levels.
+
+4.Noise Margins (NMh,NMl):The ability to withstand noise on input without affecting output (NMl=VIL-VOL).(VIL-Input Low, VOL-Output Low)
+
+---
+
+<b>Lab activities</b>
+
+Cloning and Characterising a Custom Inverter Cell
+
+```
+#First clone the directory
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+
+#Copy the tech file to vsdstdcell dirctory created inside OpenLane upon cloning.Then execute the below command.
+magic -T sky130A.tech sky130_inv.mag &
+
+![image]()
