@@ -310,5 +310,6 @@ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
 
 #Copy the tech file to vsdstdcell dirctory created inside OpenLane upon cloning.Then execute the below command.
 magic -T sky130A.tech sky130_inv.mag &
+```
 
-![image]()
+![image](images/magic_inverter_1.png)
