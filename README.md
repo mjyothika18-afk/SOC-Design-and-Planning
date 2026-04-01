@@ -21,6 +21,7 @@
 
 ![images](images/RTL-to-GDSII_1.png)
 
+
 <b>1. RTL Design (Front-End) </b>
    * Written in Verilog / VHDL
    * Describes functionality (not physical structure)
@@ -313,3 +314,7 @@ magic -T sky130A.tech sky130_inv.mag &
 ```
 
 ![image](images/magic_inverter_1.png)
+
+![image](images/magic_inverter_2.png)
+
+![image](images/magic_inverter_3.png)
