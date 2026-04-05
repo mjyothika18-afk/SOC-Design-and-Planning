@@ -318,3 +318,15 @@ magic -T sky130A.tech sky130_inv.mag &
 ![image](images/magic_inverter_2.png)
 
 ![image](images/magic_inverter_3.png)
+
+![image](images/magic_inverter_7_extract.png)
+
+Extracting SPICE Netlist from Magic
+
+```
+extract all
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+
+![image](images/magic_inverter_5_bbox.png)
