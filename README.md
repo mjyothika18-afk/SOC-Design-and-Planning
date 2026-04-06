@@ -356,7 +356,7 @@ ext2spice
 
 ![image](images/Propagation_delay2_output.png)
 
-![image](images/Propagation_delaycalculation.png)
+![image](images/Propagation_delay_calculation.png)
 
 
 
