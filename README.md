@@ -344,7 +344,19 @@ ext2spice
 
 ![image](images/Rise2.png)
 
+![image](images/rise_xy.png)
+
 ![image](images/fall1.png)
 
 ![image](images/fall2.png)
+
+![image](images/fall3.png)
+
+![image](images/Propagation_delay1.png)
+
+![image](images/Propagation_delay2_output.png)
+
+![image](images/Propagation_delaycalculation.png)
+
+
 
