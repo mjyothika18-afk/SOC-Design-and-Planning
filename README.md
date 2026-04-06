@@ -361,6 +361,14 @@ ext2spice
 
 DRC rules: poly.9 rule correction
 
+![image](images/drc_rules.png)
 
+![image](images/drc1.png)
+
+![image](images/drc2.png)
+
+![image](images/drc3.png)
+
+![image](images/drc4.png)
 
 
