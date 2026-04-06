@@ -328,5 +328,23 @@ extract all
 ext2spice cthresh 0 rthresh 0
 ext2spice
 ```
+![image](images/ext_spice_generated.png)
+
+![image](images/ext_spice_updated.png)
 
 ![image](images/magic_inverter_5_bbox.png)
+
+![image](images/ext_spice_updated_2.png)
+
+![image](images/ng_spice_inv.png)
+
+![image](images/ng_spice_inv_plot.png)
+
+![image](images/Rise1.png)
+
+![image](images/Rise2.png)
+
+![image](images/fall1.png)
+
+![image](images/fall2.png)
+
