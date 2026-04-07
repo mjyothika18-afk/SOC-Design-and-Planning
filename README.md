@@ -393,6 +393,8 @@ DRC rules: poly.9 rule correction
 
 ![image](images/nwell_rule_implementation.png)
 
+</details>
+
 <b> Day 4: Pre-Layout Timing Analysis and Clock Tree Synthesis
 
 
