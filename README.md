@@ -395,19 +395,32 @@ DRC rules: poly.9 rule correction
 
 </details>
 
-<b> Day 4: Pre-Layout Timing Analysis and Clock Tree Synthesis
+<b> Day 4: Pre-Layout Timing Analysis and Clock Tree Synthesis </b>
 
+- Fix up small DRC errors and verify the design is ready to be inserted into our flow.
 
-- CMOS Inverter — SPICE Deck,Spice extraction of inverter in magic.Editing the spice model file for analysis through simulation andPost-    layout ngspice simulations.
-
-- 16-Mask CMOS Fabrication Process
+- Setup timing analysis and introduction to flip-flop setup time. Clock tree routing and buffering using H-Tree algorithm
   
-- Find problem in the DRC section of the old magic tech file for the skywater process and fix them.  
+- Setup timing analysis using real clocks 
 
 <details>
 <summary>Click to expand detailed notes</summary>
 
 ---
+
+1: The input and output ports of the standard cell should lie on the intersection of the vertical and horizontal tracks.
+
+2: Width of the standard cell should be odd multiples of the horizontal track pitch.
+
+3: Height of the standard cell should be even multiples of the vertical track pitch.
+
+```
+magic -T sky130A.tech sky130_inv.mag &
+
+```
+
+
+
 
 
 
