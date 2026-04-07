@@ -371,4 +371,22 @@ DRC rules: poly.9 rule correction
 
 ![image](images/drc4.png)
 
+![image](images/paint.png)
+
+![image](images/paint_via.png)
+
+![image](images/poly.png)
+
+![image](images/poly_correct.png)
+
+![image](images/nwell_rule_error.png)
+
+![image](images/nwell_rule_update2.png)
+
+![image](images/nwell_rule_implementation.png)
+
+![image](images/nwell_rule_update1.png)
+
+
+
 
