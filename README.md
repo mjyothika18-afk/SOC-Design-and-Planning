@@ -393,6 +393,21 @@ DRC rules: poly.9 rule correction
 
 ![image](images/nwell_rule_implementation.png)
 
+<b> Day 4: Pre-Layout Timing Analysis and Clock Tree Synthesis
+
+
+- CMOS Inverter — SPICE Deck,Spice extraction of inverter in magic.Editing the spice model file for analysis through simulation andPost-    layout ngspice simulations.
+
+- 16-Mask CMOS Fabrication Process
+  
+- Find problem in the DRC section of the old magic tech file for the skywater process and fix them.  
+
+<details>
+<summary>Click to expand detailed notes</summary>
+
+---
+
+
 
 
 
