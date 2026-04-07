@@ -427,6 +427,48 @@ magic -T sky130A.tech sky130_inv.mag &
 
 ![image](images/track_info.png)
 
+![image](images/setting_env_variables.png)
+
+![image](images/synthesis_after_lef_File.png)
+
+![image](images/synthesis_lef_2.png)
+
+</details>
+
+<b> Day 5:Final RTL to GDSII using TritonRoute & OpenSTA</b>
+
+- Fix up small DRC errors and verify the design is ready to be inserted into our flow.
+
+- Setup timing analysis and introduction to flip-flop setup time. Clock tree routing and buffering using H-Tree algorithm
+  
+- Setup timing analysis using real clocks 
+
+<details>
+<summary>Click to expand detailed notes</summary>
+
+---
+SPEF and Post-Route STA
+After routing, parasitics (resistance and capacitance of actual wires) are extracted into a SPEF (Standard Parasitic Exchange Format) file. These parasitics are then back-annotated into the netlist and STA is re-run for final sign-off timing.
+
+
+
+
+</details>
+
+---
+
+# Acknowledgements
+
+Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
+
+Nickson P Jose, Physical Design Engineer, Intel Corporation.
+
+R. Timothy Edwards, Senior Vice President of Analog and Design, efabless Corporation.
+
+
+
+
+
 
 
 
