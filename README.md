@@ -437,11 +437,11 @@ magic -T sky130A.tech sky130_inv.mag &
 
 <b> Day 5:Final RTL to GDSII using TritonRoute & OpenSTA</b>
 
-- Fix up small DRC errors and verify the design is ready to be inserted into our flow.
+- Basics of global and detail routing and configure TritonRoute
 
-- Setup timing analysis and introduction to flip-flop setup time. Clock tree routing and buffering using H-Tree algorithm
+- Routing and DRC
   
-- Setup timing analysis using real clocks 
+- Triton Route Features
 
 <details>
 <summary>Click to expand detailed notes</summary>
