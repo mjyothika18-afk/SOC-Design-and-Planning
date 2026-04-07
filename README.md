@@ -419,6 +419,14 @@ magic -T sky130A.tech sky130_inv.mag &
 ```
 ![image](images/set_grid.png)
 
+![image](images/grid2.png)
+
+![image](images/lef_write1.png)
+
+![image](images/lef_write_2.png)
+
+![image](images/track_info.png)
+
 
 
 
