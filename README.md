@@ -416,8 +416,9 @@ DRC rules: poly.9 rule correction
 
 ```
 magic -T sky130A.tech sky130_inv.mag &
-
 ```
+![image](images/set_grid.png)
+
 
 
 
